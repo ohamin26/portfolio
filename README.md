@@ -17,9 +17,9 @@
 
 <div align="center">
 
-|                                                                     **오하민**                                                                     |
-| :------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [<img width="140px" src="https://avatars.githubusercontent.com/u/113972482?v=4"height=150 width=150> <br/> @ohamin26] (https://github.com/ohamin26) |
+| **오하민** | 
+| :------: |  
+| [<img width="140px" src="https://avatars.githubusercontent.com/u/113972482?v=4"height=150 width=150> <br/> @ohamin26](https://github.com/ohamin26) |
 
 </div>
 
