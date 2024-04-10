@@ -1,5 +1,5 @@
-import { Content } from '../components/rendingPageCompoents/content';
-import { Header } from '../components/rendingPageCompoents/header';
+import { Content } from '../components/rendingPageComponents/content/content';
+import { Header } from '../components/rendingPageComponents/header/header';
 
 export const RendingPage = () => {
   return (
