@@ -1,7 +1,13 @@
 import { Item } from './item';
-import { container, menu, profile, profileImage, profileName } from './sideBar.css';
+import { container, menu, menuButton, menuLink, profile, profileImage, profileName } from './sideBar.css';
+import { useNavigate } from 'react-router-dom';
 
 export const SideBar = () => {
+  const navigete = useNavigate();
+  const OnClickNavigate = (path: string) => {
+    console.log(path);
+    navigete(path);
+  };
   return (
     <div className={container}>
       <div className={profile}>
@@ -9,21 +15,21 @@ export const SideBar = () => {
         <div className={profileName}>오하민's portfolio</div>
       </div>
       <div className={menu}>
-        <div>
+        <button className={menuButton} onClick={() => OnClickNavigate('/introduce')}>
           <Item text="About me" />
-        </div>
-        <div>
+        </button>
+        <button className={menuButton} onClick={() => OnClickNavigate('/skills')}>
           <Item text="Skills" />
-        </div>
-        <div>
+        </button>
+        <button className={menuButton} onClick={() => OnClickNavigate('/project')}>
           <Item text="Project" />
-        </div>
-        <div>
+        </button>
+        <a className={menuLink} href="https://github.com/ohamin26" target="_blank">
           <Item text="Blog" />
-        </div>
-        <div>
+        </a>
+        <a className={menuLink} href="https://ohamin26.tistory.com/" target="_blank">
           <Item text="Github" />
-        </div>
+        </a>
       </div>
     </div>
   );

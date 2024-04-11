@@ -6,7 +6,7 @@ export const container = style({
   flexDirection: 'column',
   height: '100vh',
   width: 'fit-content',
-  marginLeft: '30px',
+  marginLeft: '15%',
 });
 
 export const profile = style({
@@ -34,9 +34,24 @@ export const profileName = style({
 export const menu = style({
   display: 'flex',
   flexDirection: 'column',
-  marginTop: '150px',
+  marginTop: '130px',
   marginBottom: 'auto',
   width: 'fit-content',
+});
+
+export const menuButton = style({
+  border: 'none',
+  backgroundColor: 'transparent',
+  cursor: 'pointer',
+  padding: '0',
+  margin: '0',
+  outline: 'none',
+});
+
+export const menuLink = style({
+  textDecoration: 'none',
+  color: 'black',
+  fontSize: '20px',
 });
 
 export const menuItem = style({
@@ -52,7 +67,7 @@ export const menuItem = style({
 });
 
 export const menuItemIconArrow = style({
-  fontSize: '30px',
+  fontSize: '20px',
 });
 
 export const menuItemParagraph = recipe({
@@ -75,5 +90,5 @@ export const menuItemParagraph = recipe({
 
 export const menuItemIcon = style({
   marginRight: '5px',
-  fontSize: '30px',
+  fontSize: '20px',
 });
