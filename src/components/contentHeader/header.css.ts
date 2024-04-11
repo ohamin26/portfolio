@@ -10,10 +10,10 @@ export const header = style({
 });
 
 export const headerIcon = style({
-  fontSize: '50px',
+  fontSize: '40px',
 });
 
 export const headerParagraph = style({
-  fontSize: '30px',
+  fontSize: '25px',
   fontWeight: '500',
 });

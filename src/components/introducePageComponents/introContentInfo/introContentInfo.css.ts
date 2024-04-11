@@ -33,12 +33,12 @@ export const introContentContactContainer = style({
 });
 
 export const introContentContactIcon = style({
-  fontSize: '25px',
+  fontSize: '22px',
   marginRight: '10px',
 });
 
 export const introContentContactParagragh = style({
-  fontSize: '17px',
+  fontSize: '16px',
 });
 
 export const introContentContactLink = style({
@@ -55,7 +55,7 @@ export const introContentIntroduce = style({
 });
 
 export const introContentIntroduceTitle = style({
-  fontSize: '25px',
+  fontSize: '20px',
   marginBottom: '17px',
 });
 

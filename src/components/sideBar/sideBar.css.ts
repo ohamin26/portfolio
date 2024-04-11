@@ -34,7 +34,7 @@ export const profileName = style({
 export const menu = style({
   display: 'flex',
   flexDirection: 'column',
-  marginTop: '150px',
+  marginTop: '130px',
   marginBottom: 'auto',
   width: 'fit-content',
 });
@@ -52,7 +52,7 @@ export const menuItem = style({
 });
 
 export const menuItemIconArrow = style({
-  fontSize: '30px',
+  fontSize: '20px',
 });
 
 export const menuItemParagraph = recipe({
@@ -75,5 +75,5 @@ export const menuItemParagraph = recipe({
 
 export const menuItemIcon = style({
   marginRight: '5px',
-  fontSize: '30px',
+  fontSize: '20px',
 });

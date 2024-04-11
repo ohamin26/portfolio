@@ -7,7 +7,7 @@ export const introContentEduContainer = style({
 });
 
 export const introContentEduTitle = style({
-  fontSize: '25px',
+  fontSize: '20px',
   marginBottom: '17px',
 });
 
@@ -18,15 +18,15 @@ export const introContentEduItem = style({
 });
 
 export const introContentEduItemImg = style({
-  width: '40px',
-  height: '40px',
+  width: '30px',
+  height: '30px',
   marginRight: '20px',
   marginLeft: '10px',
   borderRadius: '100%',
 });
 
 export const introContentEduItemTitle = style({
-  fontSize: '17px',
+  fontSize: '16px',
   display: 'flex',
   flexDirection: 'column',
   marginRight: 'auto',
@@ -39,6 +39,6 @@ export const introContentEduItemLink = style({
 });
 
 export const introContentEduItemDate = style({
-  fontSize: '15px',
+  fontSize: '14px',
   marginLeft: 'auto',
 });
