@@ -39,6 +39,21 @@ export const menu = style({
   width: 'fit-content',
 });
 
+export const menuButton = style({
+  border: 'none',
+  backgroundColor: 'transparent',
+  cursor: 'pointer',
+  padding: '0',
+  margin: '0',
+  outline: 'none',
+});
+
+export const menuLink = style({
+  textDecoration: 'none',
+  color: 'black',
+  fontSize: '20px',
+});
+
 export const menuItem = style({
   display: 'flex',
   flexDirection: 'row',
