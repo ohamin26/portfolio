@@ -1,7 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
 export const header = style({
-  paddingTop: '50px',
   marginLeft: '10px',
   paddingBottom: '12px',
   borderBottom: '2px solid #000000',

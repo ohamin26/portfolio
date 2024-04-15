@@ -16,7 +16,6 @@ globalStyle('body', {
     linear-gradient(transparent 99px, transparent 100px),
     linear-gradient(#cdcccc, #cdcccc)`,
   backgroundSize: `100% 10px, 10px 100%, 100px 100%, 100px 100px, 100px 100px`,
-  marginTop: '2%',
 });
 
 export const pageContainer = style({
