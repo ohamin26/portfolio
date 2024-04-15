@@ -24,10 +24,10 @@ export const SideBar = () => {
         <button className={menuButton} onClick={() => OnClickNavigate('/project')}>
           <Item text="Project" />
         </button>
-        <a className={menuLink} href="https://github.com/ohamin26" target="_blank">
+        <a className={menuLink} href="https://ohamin26.tistory.com/" target="_blank">
           <Item text="Blog" />
         </a>
-        <a className={menuLink} href="https://ohamin26.tistory.com/" target="_blank">
+        <a className={menuLink} href="https://github.com/ohamin26" target="_blank">
           <Item text="Github" />
         </a>
       </div>

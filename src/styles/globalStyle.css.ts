@@ -19,12 +19,12 @@ globalStyle('body', {
   marginTop: '2%',
 });
 
-export const introPage = style({
+export const pageContainer = style({
   display: 'flex',
   flexDirection: 'row',
 });
 
-export const introPageContent = style({
+export const pageContent = style({
   display: 'flex',
   flexDirection: 'column',
   marginLeft: '70px',
