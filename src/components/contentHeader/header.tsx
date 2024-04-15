@@ -11,13 +11,13 @@ export const ContentHeader = () => {
     <div className={header}>
       <div>
         {location.pathname === '/introduce' && <GoPeople className={headerIcon} />}
-        {location.pathname === '/Skills' && <PiGearThin className={headerIcon} />}
-        {location.pathname === '/Project' && <AiOutlineFundProjectionScreen className={headerIcon} />}
+        {location.pathname === '/skills' && <PiGearThin className={headerIcon} />}
+        {location.pathname === '/project' && <AiOutlineFundProjectionScreen className={headerIcon} />}
       </div>
       <div className={headerParagraph}>
         {location.pathname === '/introduce' && 'About me'}
-        {location.pathname === '/Skills' && 'Skills'}
-        {location.pathname === '/Project' && 'Project'}
+        {location.pathname === '/skills' && 'Skills'}
+        {location.pathname === '/sroject' && 'Project'}
       </div>
     </div>
   );

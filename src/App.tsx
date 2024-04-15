@@ -3,6 +3,7 @@ import './styles/globalStyle.css.ts';
 import { RendingPage } from './routes/rendingPage.tsx';
 import './styles/fonts/font.css';
 import { IntroducePage } from './routes/introducePage.tsx';
+import { SkillPage } from './routes/skillPage.tsx';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RendingPage />}></Route>
           <Route path="/introduce" element={<IntroducePage />}></Route>
+          <Route path="/skills" element={<SkillPage />}></Route>
         </Routes>
       </Router>
     </div>
