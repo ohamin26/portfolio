@@ -6,7 +6,7 @@ export const header = style({
   alignItems: 'center',
   width: 'fit-content',
   height: 'fit-content',
-  marginTop: '8px',
+  marginTop: '16px',
 });
 
 export const headerIcon = style({

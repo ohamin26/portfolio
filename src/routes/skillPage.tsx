@@ -1,17 +1,15 @@
 import { ContentHeader } from '../components/contentHeader/header';
-import { IntroContentEdu } from '../components/introducePageComponents/introContentEdu/introContentEdu';
-import { IntroContentInfo } from '../components/introducePageComponents/introContentInfo/introContentInfo';
 import { SideBar } from '../components/sideBar/sideBar';
+import { SkillPageInfo } from '../components/skillPageComponets/skillPageInfo';
 import { pageContainer, pageContent } from '../styles/globalStyle.css';
 
-export const IntroducePage = () => {
+export const SkillPage = () => {
   return (
     <div className={pageContainer}>
       <SideBar />
       <div className={pageContent}>
         <ContentHeader />
-        <IntroContentInfo />
-        <IntroContentEdu />
+        <SkillPageInfo />
       </div>
     </div>
   );

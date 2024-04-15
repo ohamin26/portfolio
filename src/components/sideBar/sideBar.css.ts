@@ -34,7 +34,7 @@ export const profileName = style({
 export const menu = style({
   display: 'flex',
   flexDirection: 'column',
-  marginTop: '130px',
+  marginTop: '100px',
   marginBottom: 'auto',
   width: 'fit-content',
 });
