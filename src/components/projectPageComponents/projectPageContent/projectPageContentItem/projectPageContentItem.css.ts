@@ -6,7 +6,7 @@ export const ItemContainer = style({
   border: '1px solid #C1C1BB',
   borderRadius: '30px',
   marginTop: '2rem',
-  width: '38%',
+  width: '32%',
   height: '40vh',
   marginLeft: '2%',
 });

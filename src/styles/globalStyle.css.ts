@@ -26,7 +26,7 @@ export const pageContainer = style({
 export const pageContent = style({
   display: 'flex',
   flexDirection: 'column',
-  marginLeft: '70px',
+  marginLeft: '30px',
 });
 
 export const projectPageContent = style({
