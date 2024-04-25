@@ -28,3 +28,9 @@ export const pageContent = style({
   flexDirection: 'column',
   marginLeft: '70px',
 });
+
+export const projectPageContent = style({
+  display: 'flex',
+  flexDirection: 'column',
+  padding: '1rem',
+});

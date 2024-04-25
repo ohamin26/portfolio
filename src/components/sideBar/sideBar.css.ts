@@ -21,7 +21,6 @@ export const profileImage = style({
   width: '40px',
   height: '40px',
   borderRadius: '50%',
-  backgroundColor: 'orange',
   marginRight: '10px',
   marginLeft: '5px',
 });
