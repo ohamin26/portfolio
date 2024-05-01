@@ -49,3 +49,23 @@ export const ItemTitle = style({
   marginTop: '1rem',
   textAlign: 'center',
 });
+
+export const ModalStyle = {
+  overlay: {
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    zIndex: '1',
+    width: '100%',
+    MdHeight: '100vh',
+  },
+  content: {
+    width: '60%',
+    height: '70%',
+    margin: 'auto',
+    marginTop: '2%',
+    borderRadius: '10px',
+    border: '1px solid #C1C1BB',
+    zIndex: '150',
+    padding: '0.5rem',
+    paddingTop: '5px',
+  },
+};
