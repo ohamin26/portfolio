@@ -58,10 +58,10 @@ export const ModalStyle = {
     MdHeight: '100vh',
   },
   content: {
-    width: '60%',
-    height: '70%',
+    width: '80%',
+    height: '85%',
     margin: 'auto',
-    marginTop: '2%',
+    marginTop: '1%',
     borderRadius: '10px',
     border: '1px solid #C1C1BB',
     zIndex: '150',

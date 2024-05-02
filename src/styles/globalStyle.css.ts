@@ -18,6 +18,15 @@ globalStyle('body', {
   backgroundSize: `100% 10px, 10px 100%, 100px 100%, 100px 100px, 100px 100px`,
 });
 
+globalStyle('*::-webkit-scrollbar', {
+  width: '10px',
+});
+
+globalStyle('*::-webkit-scrollbar-thumb', {
+  backgroundColor: '#cdcccc',
+  borderRadius: '10px',
+});
+
 export const pageContainer = style({
   display: 'flex',
   flexDirection: 'row',

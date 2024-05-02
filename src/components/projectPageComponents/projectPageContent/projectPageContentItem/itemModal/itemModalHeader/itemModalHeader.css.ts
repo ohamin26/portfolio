@@ -1,6 +1,9 @@
 import { style } from '@vanilla-extract/css';
 
 export const ItemContainer = style({
+  position: 'sticky',
+  top: '0',
+
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-between',
