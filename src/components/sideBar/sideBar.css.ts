@@ -5,7 +5,7 @@ export const container = style({
   display: 'flex',
   flexDirection: 'column',
   height: '100vh',
-  width: 'fit-content',
+  width: '20%',
   marginLeft: '15%',
 });
 
@@ -21,7 +21,6 @@ export const profileImage = style({
   width: '40px',
   height: '40px',
   borderRadius: '50%',
-  backgroundColor: 'orange',
   marginRight: '10px',
   marginLeft: '5px',
 });
