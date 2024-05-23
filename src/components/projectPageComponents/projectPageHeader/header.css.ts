@@ -11,7 +11,12 @@ export const headerIconWrapper = style({
   fontSize: '2rem',
   color: '#333',
   borderBottom: '1px solid #C1C1BB',
-  width: '100%',
+  '@media': {
+    'screen and (max-width: 1600px)': {
+      width: '100%',
+    },
+  },
+  width: '83%',
   alignSelf: 'start',
   display: 'flex',
 });

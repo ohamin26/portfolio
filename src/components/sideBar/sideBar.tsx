@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 export const SideBar = () => {
   const navigete = useNavigate();
   const OnClickNavigate = (path: string) => {
-    console.log(path);
     navigete(path);
   };
   return (

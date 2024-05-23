@@ -9,7 +9,6 @@ export const ItemContainer = style({
   justifyContent: 'space-between',
   fontSize: '1.3rem',
   color: '#C1C1BB',
-  marginBottom: '1rem',
   marginTop: '3px',
 });
 

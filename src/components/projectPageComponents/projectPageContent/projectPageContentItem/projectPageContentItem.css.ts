@@ -3,11 +3,12 @@ import { style } from '@vanilla-extract/css';
 export const ItemContainer = style({
   display: 'flex',
   flexDirection: 'column',
+  justifyContent: 'center',
   border: '1px solid #C1C1BB',
   borderRadius: '30px',
   marginTop: '2rem',
   width: '32%',
-  height: '40vh',
+  height: '35vh',
   marginLeft: '2%',
 });
 
@@ -22,7 +23,7 @@ export const ItemContentWrapper = style({
 
 export const ItemImg = style({
   width: '100%',
-  height: '195px',
+  height: '100%',
   overflow: 'hidden',
   borderRadius: '30px 30px 0 0',
 });

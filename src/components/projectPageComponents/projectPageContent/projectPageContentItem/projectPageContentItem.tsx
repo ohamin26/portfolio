@@ -14,6 +14,7 @@ import { RootState } from '../../../../redux/reducers/rootReducer';
 import { closeModal, openModal } from '../../../../redux/slice/modalSlice';
 import Modal from 'react-modal';
 import { ItemModalContent } from './itemModal/itemModalContent/itemModalContent';
+
 interface ProjectPageContentItemProps {
   title: string;
 }
@@ -23,7 +24,7 @@ export const ProjectPageContentItem = ({ title }: ProjectPageContentItemProps) =
   const openModalState = useSelector((state: RootState) => state.modal.modalOpen);
   // modal 핸들러
   const openModalHandler = () => {
-    openModalState ? dispatch(closeModal()) : dispatch(openModal());
+    openModalState ? dispatch(closeModal()) : dispatch(openModal(title));
   };
   return (
     <div className={ItemContainer}>
@@ -51,6 +52,7 @@ export const ProjectPageContentItem = ({ title }: ProjectPageContentItemProps) =
       {title === 'cj' && <span className={ItemTitle}>CJ 대한통운 미래기술 챌린지 2023</span>}
       {title === 'school' && <span className={ItemTitle}>중고서적 거래 플랫폼</span>}
       <Modal
+        ariaHideApp={false}
         isOpen={openModalState}
         onRequestClose={() => dispatch(closeModal())}
         style={{

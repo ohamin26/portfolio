@@ -30,12 +30,14 @@ globalStyle('*::-webkit-scrollbar-thumb', {
 export const pageContainer = style({
   display: 'flex',
   flexDirection: 'row',
+  width: '100%',
+  padding: '0',
+  margin: '0',
 });
 
 export const pageContent = style({
   display: 'flex',
   flexDirection: 'column',
-  marginLeft: '30px',
 });
 
 export const projectPageContent = style({
