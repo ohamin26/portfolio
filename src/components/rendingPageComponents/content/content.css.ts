@@ -6,6 +6,9 @@ export const container = style({
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
+  '::-webkit-scrollbar': {
+    display: 'none',
+  },
 });
 
 // 첫 번째 문단

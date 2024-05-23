@@ -6,7 +6,6 @@ export const skillPageInfoContainer = style({
   width: '100%',
   marginTop: '20px',
   marginBottom: '20px',
-  flexWrap: 'wrap',
 });
 
 export const skillPageInfoParagraph = style({

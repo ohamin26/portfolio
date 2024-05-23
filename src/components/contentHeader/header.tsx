@@ -17,7 +17,7 @@ export const ContentHeader = () => {
       <div className={headerParagraph}>
         {location.pathname === '/introduce' && 'About me'}
         {location.pathname === '/skills' && 'Skills'}
-        {location.pathname === '/sroject' && 'Project'}
+        {location.pathname === '/project' && 'Project'}
       </div>
     </div>
   );
