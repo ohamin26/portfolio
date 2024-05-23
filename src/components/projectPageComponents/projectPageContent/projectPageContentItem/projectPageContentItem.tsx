@@ -30,15 +30,13 @@ export const ProjectPageContentItem = ({ title }: ProjectPageContentItemProps) =
     <div className={ItemContainer}>
       <div className={ItemContentWrapper}>
         {title === 'documents' && (
-          <img onClick={openModalHandler} className={ItemImgDocuments} src="src\assets\documents.png" alt="" />
+          <img onClick={openModalHandler} className={ItemImgDocuments} src="\assets\documents.png" alt="" />
         )}
         {title === 'overdog' && (
-          <img onClick={openModalHandler} className={ItemImgOverdog} src="src\assets\overdog.png" alt="" />
+          <img onClick={openModalHandler} className={ItemImgOverdog} src="\assets\overdog.png" alt="" />
         )}
-        {title === 'alwrite' && (
-          <img onClick={openModalHandler} className={ItemImg} src="src\assets\alwrite.jpg" alt="" />
-        )}
-        {title === 'cj' && <img onClick={openModalHandler} className={ItemImg} src="src\assets\cj.png" alt="" />}
+        {title === 'alwrite' && <img onClick={openModalHandler} className={ItemImg} src="\assets\alwrite.jpg" alt="" />}
+        {title === 'cj' && <img onClick={openModalHandler} className={ItemImg} src="\assets\cj.png" alt="" />}
         {title === 'school' && <LuSchool onClick={openModalHandler} size={170} />}
       </div>
       {title === 'documents' && <span className={ItemTitle}>개인 포트폴리오 프로젝트</span>}

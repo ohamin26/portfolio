@@ -7,7 +7,7 @@ export const IntroContentInfo = () => {
     <div className={introContentInfo}>
       <div className={introContentContactContainer}>
         <div>
-          <img className={introContentInfoImg} src="src\assets\profile.jpg" alt="" />
+          <img className={introContentInfoImg} src="\assets\profile.jpg" alt="" />
           <IntroContentContact />
         </div>
         <IntroContentIntroduce />

@@ -10,7 +10,7 @@ export const SideBar = () => {
   return (
     <div className={container}>
       <div className={profile}>
-        <img className={profileImage} src="src\assets\profile_sub.jpg" alt="profile" />
+        <img className={profileImage} src="\assets\profile_sub.jpg" alt="profile" />
         <div className={profileName}>오하민's portfolio</div>
       </div>
       <div className={menu}>
