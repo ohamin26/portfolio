@@ -4,6 +4,8 @@ export const introContentEduContainer = style({
   display: 'flex',
   flexDirection: 'column',
   marginTop: '30px',
+  marginBottom: '30px',
+  width: '100%',
 });
 
 export const introContentEduTitle = style({
@@ -15,6 +17,15 @@ export const introContentEduItem = style({
   display: 'flex',
   flexDirection: 'row',
   marginTop: '20px',
+  width: '100%',
+  '@media': {
+    'screen and (max-width: 1000px)': {
+      width: '70%',
+    },
+    'screen and (max-width: 680px)': {
+      width: '100%',
+    },
+  },
 });
 
 export const introContentEduItemImg = style({
@@ -40,5 +51,4 @@ export const introContentEduItemLink = style({
 
 export const introContentEduItemDate = style({
   fontSize: '14px',
-  marginLeft: 'auto',
 });

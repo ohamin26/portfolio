@@ -3,7 +3,7 @@ import { style } from '@vanilla-extract/css';
 export const headerContainer = style({
   marginTop: '5%',
   display: 'flex',
-  width: '100vh',
+  width: '100%',
   height: 'fit-content',
 });
 

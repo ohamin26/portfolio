@@ -4,8 +4,8 @@ export const skillPageInfoContainer = style({
   display: 'flex',
   flexDirection: 'column',
   width: '100%',
-  marginTop: '20px',
-  marginBottom: '20px',
+  marginTop: '10px',
+  marginBottom: '10px',
 });
 
 export const skillPageInfoParagraph = style({
@@ -30,7 +30,7 @@ export const skillPageInfoItemWapper = style({
 });
 
 export const skillPageInfoItemGap = style({
-  marginBottom: '4%',
+  marginBottom: '1%',
 });
 
 export const skillPageInfoItemImg = style({

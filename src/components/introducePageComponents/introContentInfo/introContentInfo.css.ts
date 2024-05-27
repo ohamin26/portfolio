@@ -11,7 +11,7 @@ export const introContentInfoContainer = style({
 });
 
 export const introContentInfoImg = style({
-  marginTop: '40px',
+  marginTop: '20px',
   width: '150px',
   height: '150px',
   borderRadius: '40%',
@@ -23,6 +23,11 @@ export const introContentContact = style({
   flexDirection: 'column',
   marginTop: '35px',
   marginLeft: '5px',
+  '@media': {
+    'screen and (max-width: 1000px)': {
+      marginLeft: '100px',
+    },
+  },
 });
 
 export const introContentContactContainer = style({
@@ -30,6 +35,30 @@ export const introContentContactContainer = style({
   flexDirection: 'row',
   alignItems: 'start',
   marginBottom: '5px',
+});
+
+export const introContentContainer = style({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'start',
+  marginBottom: '5px',
+  '@media': {
+    'screen and (max-width: 1000px)': {
+      flexDirection: 'column',
+    },
+  },
+});
+
+export const introContentContactWrapper = style({
+  display: 'flex',
+  flexDirection: 'column',
+  marginLeft: '20px',
+  '@media': {
+    'screen and (max-width: 1000px)': {
+      flexDirection: 'row',
+      marginLeft: '0',
+    },
+  },
 });
 
 export const introContentContactIcon = style({
@@ -50,8 +79,13 @@ export const introContentContactLink = style({
 export const introContentIntroduce = style({
   display: 'flex',
   flexDirection: 'column',
-  marginTop: '40px',
+  marginTop: '20px',
   marginLeft: '80px',
+  '@media': {
+    'screen and (max-width: 1000px)': {
+      marginLeft: '0px',
+    },
+  },
 });
 
 export const introContentIntroduceTitle = style({
@@ -66,6 +100,11 @@ export const introContentIntroduceContent = style({
   borderRadius: '10px',
   border: '1px solid #E5E5E5',
   display: 'flex',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      width: '420px',
+    },
+  },
 });
 
 export const introContentIntroduceContentIcon = style({

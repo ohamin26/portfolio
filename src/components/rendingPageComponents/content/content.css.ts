@@ -39,6 +39,11 @@ export const paragraph2 = style({
 export const img = style({
   width: '80vh',
   height: '60vh',
+  '@media': {
+    '(max-width: 550px)': {
+      width: '100%',
+    },
+  },
 });
 
 // 버튼

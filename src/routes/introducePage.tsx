@@ -1,17 +1,27 @@
 import { ContentHeader } from '../components/contentHeader/header';
 import { IntroContentEdu } from '../components/introducePageComponents/introContentEdu/introContentEdu';
 import { IntroContentInfo } from '../components/introducePageComponents/introContentInfo/introContentInfo';
+import { ProjectPageContent } from '../components/projectPageComponents/projectPageContent/content/projectPageContent';
+import { Header } from '../components/projectPageComponents/projectPageHeader/header';
 import { SideBar } from '../components/sideBar/sideBar';
-import { pageContainer, pageContent } from '../styles/globalStyle.css';
+import { SkillPageInfo } from '../components/skillPageComponets/skillPageInfo';
+import { pageContainer, pageContent, pageSideBar } from '../styles/globalStyle.css';
 
 export const IntroducePage = () => {
   return (
     <div className={pageContainer}>
-      <SideBar />
+      <div className={pageSideBar}>
+        <SideBar />
+      </div>
       <div className={pageContent}>
-        <ContentHeader />
+        <ContentHeader title="introduce" />
         <IntroContentInfo />
         <IntroContentEdu />
+        <ContentHeader title="skills" />
+        <SkillPageInfo />
+        <ContentHeader title="project" />
+        <Header />
+        <ProjectPageContent />
       </div>
     </div>
   );

@@ -8,7 +8,6 @@ export const ProjectPageContent = () => {
       <ProjectPageContentItem title="overdog" />
       <ProjectPageContentItem title="alwrite" />
       <ProjectPageContentItem title="cj" />
-      <ProjectPageContentItem title="school" />
     </div>
   );
 };
