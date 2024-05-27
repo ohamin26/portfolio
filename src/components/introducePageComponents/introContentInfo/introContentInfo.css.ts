@@ -52,7 +52,7 @@ export const introContentContainer = style({
 export const introContentContactWrapper = style({
   display: 'flex',
   flexDirection: 'column',
-  marginLeft: '20px',
+  marginLeft: '0',
   '@media': {
     'screen and (max-width: 1000px)': {
       flexDirection: 'row',
