@@ -7,7 +7,7 @@ export const header = style({
   width: 'fit-content',
   height: 'fit-content',
   marginTop: '16px',
-  marginBottom: '8px',
+  marginBottom: '16px',
 });
 
 export const headerIcon = style({

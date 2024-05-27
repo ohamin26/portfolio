@@ -14,12 +14,18 @@ export const IntroducePage = () => {
         <SideBar />
       </div>
       <div className={pageContent}>
-        <ContentHeader title="introduce" />
+        <div id="introduce">
+          <ContentHeader title="introduce" />
+        </div>
         <IntroContentInfo />
         <IntroContentEdu />
-        <ContentHeader title="skills" />
+        <div id="skills">
+          <ContentHeader title="skills" />
+        </div>
         <SkillPageInfo />
-        <ContentHeader title="project" />
+        <div id="project">
+          <ContentHeader title="project" />
+        </div>
         <Header />
         <ProjectPageContent />
       </div>

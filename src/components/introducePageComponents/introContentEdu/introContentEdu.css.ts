@@ -32,7 +32,6 @@ export const introContentEduItemImg = style({
   width: '30px',
   height: '30px',
   marginRight: '20px',
-  marginLeft: '10px',
   borderRadius: '100%',
 });
 
