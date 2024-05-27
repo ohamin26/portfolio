@@ -30,14 +30,35 @@ globalStyle('*::-webkit-scrollbar-thumb', {
 export const pageContainer = style({
   display: 'flex',
   flexDirection: 'row',
-  width: '100%',
   padding: '0',
   margin: '0',
+  width: 'fit-content',
+});
+
+export const pageSideBar = style({
+  position: 'fixed',
+  left: '200',
+  marginLeft: '10%',
+  width: 'fit-content',
+  '@media': {
+    'screen and (max-width: 1200px)': {
+      display: 'none',
+    },
+  },
 });
 
 export const pageContent = style({
   display: 'flex',
   flexDirection: 'column',
+  marginLeft: '50%',
+  '@media': {
+    'screen and (max-width: 1200px)': {
+      marginLeft: '20%',
+    },
+    'screen and (max-width: 800px)': {
+      marginLeft: '7%',
+    },
+  },
 });
 
 export const projectPageContent = style({

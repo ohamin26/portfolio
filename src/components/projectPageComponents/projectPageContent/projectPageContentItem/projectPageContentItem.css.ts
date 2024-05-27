@@ -7,9 +7,22 @@ export const ItemContainer = style({
   border: '1px solid #C1C1BB',
   borderRadius: '30px',
   marginTop: '2rem',
-  width: '32%',
-  height: '35vh',
-  marginLeft: '2%',
+  width: '40%',
+  height: '50vh',
+  marginLeft: '6%',
+  '@media': {
+    '(max-width: 1200px)': {
+      marginLeft: '15%',
+      width: '70%',
+    },
+    '(max-width: 730px)': {
+      marginLeft: '10%',
+      width: '80%',
+    },
+    '(max-width: 600px)': {
+      marginLeft: '10%',
+    },
+  },
 });
 
 export const ItemContentWrapper = style({
@@ -29,7 +42,7 @@ export const ItemImg = style({
 });
 
 export const ItemImgOverdog = style({
-  width: '80%',
+  width: '100%',
   height: '170px',
   overflow: 'hidden',
   marginTop: '10px',

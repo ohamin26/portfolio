@@ -1,23 +1,24 @@
 import { GoPeople } from 'react-icons/go';
 import { PiGearThin } from 'react-icons/pi';
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
-import { useLocation } from 'react-router-dom';
 import { header, headerIcon, headerParagraph } from './header.css';
 
-export const ContentHeader = () => {
-  const location = useLocation();
+interface ContentHeaderProps {
+  title: string;
+}
 
+export const ContentHeader = ({ title }: ContentHeaderProps) => {
   return (
     <div className={header}>
       <div>
-        {location.pathname === '/introduce' && <GoPeople className={headerIcon} />}
-        {location.pathname === '/skills' && <PiGearThin className={headerIcon} />}
-        {location.pathname === '/project' && <AiOutlineFundProjectionScreen className={headerIcon} />}
+        {title === 'introduce' && <GoPeople className={headerIcon} />}
+        {title === 'skills' && <PiGearThin className={headerIcon} />}
+        {title === 'project' && <AiOutlineFundProjectionScreen className={headerIcon} />}
       </div>
       <div className={headerParagraph}>
-        {location.pathname === '/introduce' && 'About me'}
-        {location.pathname === '/skills' && 'Skills'}
-        {location.pathname === '/project' && 'Project'}
+        {title === 'introduce' && 'About me'}
+        {title === 'skills' && 'Skills'}
+        {title === 'project' && 'Project'}
       </div>
     </div>
   );

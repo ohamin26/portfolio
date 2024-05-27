@@ -48,7 +48,6 @@ export const ProjectPageContentItem = ({ title }: ProjectPageContentItemProps) =
         </span>
       )}
       {title === 'cj' && <span className={ItemTitle}>CJ 대한통운 미래기술 챌린지 2023</span>}
-      {title === 'school' && <span className={ItemTitle}>중고서적 거래 플랫폼</span>}
       <Modal
         ariaHideApp={false}
         isOpen={openModalState}

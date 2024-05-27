@@ -5,8 +5,7 @@ export const container = style({
   display: 'flex',
   flexDirection: 'column',
   height: '100vh',
-  width: '20%',
-  marginLeft: '15%',
+  width: '100%',
 });
 
 export const profile = style({
