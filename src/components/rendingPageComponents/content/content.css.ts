@@ -41,7 +41,7 @@ export const img = style({
   height: '60vh',
   '@media': {
     '(max-width: 550px)': {
-      width: '100%',
+      width: '80%',
     },
   },
 });

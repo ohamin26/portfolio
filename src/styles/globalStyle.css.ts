@@ -50,13 +50,13 @@ export const pageSideBar = style({
 export const pageContent = style({
   display: 'flex',
   flexDirection: 'column',
-  marginLeft: '50%',
+  marginLeft: '45%',
   '@media': {
     'screen and (max-width: 1200px)': {
       marginLeft: '20%',
     },
     'screen and (max-width: 800px)': {
-      marginLeft: '7%',
+      marginLeft: '2%',
     },
   },
 });
