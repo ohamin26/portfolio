@@ -11,15 +11,8 @@ export const ItemContainer = style({
   height: '50vh',
   marginLeft: '6%',
   '@media': {
-    '(max-width: 1200px)': {
-      marginLeft: '15%',
-      width: '70%',
-    },
-    '(max-width: 730px)': {
-      marginLeft: '10%',
+    '(max-width: 700px)': {
       width: '80%',
-    },
-    '(max-width: 600px)': {
       marginLeft: '10%',
     },
   },
@@ -43,15 +36,15 @@ export const ItemImg = style({
 
 export const ItemImgOverdog = style({
   width: '100%',
-  height: '170px',
+  height: '100%',
   overflow: 'hidden',
   marginTop: '10px',
   borderRadius: '30px 30px 0 0',
 });
 
 export const ItemImgDocuments = style({
-  width: '90%',
-  height: '190px',
+  width: '100%',
+  height: '100%',
   marginTop: '10px',
   overflow: 'hidden',
   borderRadius: '30px 30px 0 0',
