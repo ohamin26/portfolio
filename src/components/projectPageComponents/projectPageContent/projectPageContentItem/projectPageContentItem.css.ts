@@ -8,12 +8,18 @@ export const ItemContainer = style({
   borderRadius: '30px',
   marginTop: '2rem',
   width: '40%',
-  height: '50vh',
+  height: '37vh',
   marginLeft: '6%',
   '@media': {
     '(max-width: 700px)': {
-      width: '80%',
-      marginLeft: '10%',
+      width: '63%',
+      marginLeft: '18%',
+      height: '31vh',
+    },
+    '(min-width: 1600px)': {
+      height: '25vh',
+      width: '37%',
+      marginLeft: '3%',
     },
   },
 });
@@ -21,39 +27,56 @@ export const ItemContainer = style({
 export const ItemContentWrapper = style({
   display: 'flex',
   flexDirection: 'column',
-  height: '70%',
+  height: '80%',
   alignItems: 'center',
   width: '100%',
   borderBottom: '1px solid #C1C1BB',
 });
 
 export const ItemImg = style({
-  width: '100%',
-  height: '100%',
+  width: '70%',
+  height: '70%',
+  marginTop: '8%',
   overflow: 'hidden',
   borderRadius: '30px 30px 0 0',
+  '@media': {
+    '(min-width: 1600px)': {
+      marginTop: '11%',
+    },
+  },
 });
 
 export const ItemImgOverdog = style({
-  width: '100%',
-  height: '100%',
+  width: '60%',
+  height: '60%',
+  marginTop: '12%',
   overflow: 'hidden',
-  marginTop: '10px',
   borderRadius: '30px 30px 0 0',
+  '@media': {
+    '(min-width: 1600px)': {
+      marginTop: '15%',
+    },
+  },
 });
 
 export const ItemImgDocuments = style({
-  width: '100%',
-  height: '100%',
-  marginTop: '10px',
+  width: '70%',
+  height: '70%',
+  marginTop: '8%',
   overflow: 'hidden',
   borderRadius: '30px 30px 0 0',
+  '@media': {
+    '(min-width: 1600px)': {
+      marginTop: '11%',
+    },
+  },
 });
 
 export const ItemTitle = style({
   fontSize: '15px',
   fontWeight: 'bold',
-  marginTop: '1rem',
+  marginTop: '5%',
+  marginBottom: '5%',
   textAlign: 'center',
 });
 
