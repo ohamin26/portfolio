@@ -63,9 +63,6 @@ export const pageContent = style({
     'screen and (min-width: 500px)': {
       marginLeft: '0%',
     },
-    'screen and (min-width: 700px)': {
-      marginLeft: '25%',
-    },
     'screen and (min-width: 1600px)': {
       marginLeft: '35%',
     },
