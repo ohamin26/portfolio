@@ -58,9 +58,9 @@ export const pageContent = style({
   marginLeft: '30%',
   '@media': {
     'screen and (max-width: 1200px)': {
-      marginLeft: '30%',
+      marginLeft: '15%',
     },
-    'screen and (min-width: 500px)': {
+    'screen and (max-width: 700px)': {
       marginLeft: '0%',
     },
     'screen and (min-width: 1600px)': {
