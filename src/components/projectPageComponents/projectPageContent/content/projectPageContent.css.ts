@@ -4,4 +4,5 @@ export const ItemContainer = style({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
+  marginBottom: '10%',
 });

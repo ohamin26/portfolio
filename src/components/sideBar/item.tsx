@@ -34,13 +34,13 @@ export const Item = ({ text }: ItemProps) => {
       <div className={menuItemIconArrow}>
         <IoIosArrowForward />
       </div>
-      <div className={menuItemParagraphClass}>
+      <div className={`${menuItemParagraphClass} ${menuItemParagraph}`}>
         <div className={menuItemIcon}>
-          {text === 'About me' && <GoPeople />}
+          {text === 'Introduce' && <GoPeople />}
           {text === 'Skills' && <PiGearThin />}
           {text === 'Project' && <AiOutlineFundProjectionScreen />}
           {text === 'Blog' && <PiReadCvLogoThin />}
-          {text === 'Github' && <FaGithub />}
+          {text === 'GitHub' && <FaGithub />}
         </div>
         {text}
       </div>

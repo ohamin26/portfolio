@@ -27,19 +27,24 @@ globalStyle('*::-webkit-scrollbar-thumb', {
   borderRadius: '10px',
 });
 
+export const pageWrapper = style({
+  display: 'flex',
+  flexDirection: 'column',
+  margin: '0',
+  padding: '0',
+});
+
 export const pageContainer = style({
   display: 'flex',
   flexDirection: 'row',
   padding: '0',
   margin: '0',
-  width: 'fit-content',
 });
 
 export const pageSideBar = style({
   position: 'fixed',
-  left: '200',
-  marginLeft: '10%',
-  width: 'fit-content',
+  left: '0',
+  top: '0',
   '@media': {
     'screen and (max-width: 1200px)': {
       display: 'none',
@@ -50,16 +55,19 @@ export const pageSideBar = style({
 export const pageContent = style({
   display: 'flex',
   flexDirection: 'column',
-  marginLeft: '60%',
+  marginLeft: '30%',
   '@media': {
     'screen and (max-width: 1200px)': {
-      marginLeft: '20%',
+      marginLeft: '30%',
     },
-    'screen and (max-width: 800px)': {
-      marginLeft: '2%',
+    'screen and (min-width: 500px)': {
+      marginLeft: '0%',
+    },
+    'screen and (min-width: 700px)': {
+      marginLeft: '25%',
     },
     'screen and (min-width: 1600px)': {
-      marginLeft: '80%',
+      marginLeft: '35%',
     },
   },
 });
