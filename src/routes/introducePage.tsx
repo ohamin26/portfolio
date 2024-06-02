@@ -3,31 +3,35 @@ import { IntroContentEdu } from '../components/introducePageComponents/introCont
 import { IntroContentInfo } from '../components/introducePageComponents/introContentInfo/introContentInfo';
 import { ProjectPageContent } from '../components/projectPageComponents/projectPageContent/content/projectPageContent';
 import { Header } from '../components/projectPageComponents/projectPageHeader/header';
-import { SideBar } from '../components/sideBar/sideBar';
+import LandingPage from '../components/rendingPage/randingPage';
+import Sidebar from '../components/sideBar/sideBar';
 import { SkillPageInfo } from '../components/skillPageComponets/skillPageInfo';
-import { pageContainer, pageContent, pageSideBar } from '../styles/globalStyle.css';
+import { pageContainer, pageContent, pageSideBar, pageWrapper } from '../styles/globalStyle.css';
 
 export const IntroducePage = () => {
   return (
-    <div className={pageContainer}>
-      <div className={pageSideBar}>
-        <SideBar />
-      </div>
-      <div className={pageContent}>
-        <div id="introduce">
-          <ContentHeader title="introduce" />
+    <div className={pageWrapper}>
+      <LandingPage />
+      <div className={pageContainer}>
+        <div className={pageSideBar}>
+          <Sidebar />
         </div>
-        <IntroContentInfo />
-        <IntroContentEdu />
-        <div id="skills">
-          <ContentHeader title="skills" />
+        <div className={pageContent}>
+          <div id="Introduce">
+            <ContentHeader title="introduce" />
+          </div>
+          <IntroContentInfo />
+          <IntroContentEdu />
+          <div id="Skills">
+            <ContentHeader title="skills" />
+          </div>
+          <SkillPageInfo />
+          <div id="Project">
+            <ContentHeader title="project" />
+          </div>
+          <Header />
+          <ProjectPageContent />
         </div>
-        <SkillPageInfo />
-        <div id="project">
-          <ContentHeader title="project" />
-        </div>
-        <Header />
-        <ProjectPageContent />
       </div>
     </div>
   );

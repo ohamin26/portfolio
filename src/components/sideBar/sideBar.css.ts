@@ -1,45 +1,24 @@
+// Sidebar.css.ts
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
-export const container = style({
-  display: 'flex',
-  flexDirection: 'column',
+export const sidebarContainer = style({
+  width: '250px',
   height: '100vh',
-  width: '100%',
+  backgroundColor: '#f8f9fa',
+  padding: '10px',
+  boxShadow: '2px 0 5px rgba(0,0,0,0.1)',
+  paddingTop: '70%',
 });
 
-export const profile = style({
-  display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
-  marginTop: '20px',
-  width: 'fit-content',
-});
-
-export const profileImage = style({
-  width: '40px',
-  height: '40px',
-  borderRadius: '50%',
-  marginRight: '10px',
-  marginLeft: '5px',
-});
-
-export const profileName = style({
-  fontSize: '20px',
-  textAlign: 'center',
-});
-
-export const menu = style({
-  display: 'flex',
-  flexDirection: 'column',
-  marginTop: '100px',
-  marginBottom: 'auto',
-  width: 'fit-content',
+export const activeItem = style({
+  backgroundColor: '#e2e6ea',
 });
 
 export const menuButton = style({
   border: 'none',
   backgroundColor: 'transparent',
+  width: '100%',
   cursor: 'pointer',
   padding: '0',
   margin: '0',
@@ -49,7 +28,10 @@ export const menuButton = style({
 export const menuLink = style({
   textDecoration: 'none',
   color: 'black',
-  fontSize: '20px',
+  width: '100%',
+  cursor: 'pointer',
+  padding: '0',
+  margin: '0',
 });
 
 export const menuItem = style({
@@ -77,8 +59,8 @@ export const menuItemParagraph = recipe({
   },
   variants: {
     active: {
-      ActiveBorderBottom: { borderBottom: '2px solid #000000' },
-      UnActiveBorderBottom: { borderBottom: '2px solid grey' },
+      ActiveBorderBottom: '',
+      UnActiveBorderBottom: '',
     },
   },
   defaultVariants: {
