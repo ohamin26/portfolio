@@ -9,7 +9,6 @@ function App() {
       <Router basename={import.meta.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<IntroducePage />}></Route>
-          {/* <Route path="/introduce" element={<IntroducePage />}></Route> */}
         </Routes>
       </Router>
     </div>
