@@ -70,7 +70,17 @@ export const ItemModalImage = ({ title }: ItemModalImageProps) => {
               { name: '2', pic: '/assets/cj/result_pic.webp' },
               { name: '3', pic: '/assets/cj/result.webp' },
             ])
-          : '';
+          : title === 'alwrite'
+            ? (setNumOfCards(1),
+              setImgData([
+                { name: '1', pic: '/assets/alwrite/main.webp' },
+                { name: '2', pic: '/assets/alwrite/menu.webp' },
+                { name: '3', pic: '/assets/alwrite/search.webp' },
+                { name: '4', pic: '/assets/alwrite/canvas_draw.webp' },
+                { name: '5', pic: '/assets/alwrite/canvas_ocr.webp' },
+                { name: '6', pic: '/assets/alwrite/canvas_ocr_result.webp' },
+              ]))
+            : '';
   }, [title]);
 
   return (
@@ -103,7 +113,7 @@ export const ItemModalImage = ({ title }: ItemModalImageProps) => {
         {imgData.map((data) => {
           return (
             <div key={data.name} className={ItemModalImgContainer}>
-              {title === 'documents' ? (
+              {title === 'documents' || title === 'alwrite' ? (
                 <img src={data.pic} alt="" className={ItemModalImgDocuments} />
               ) : (
                 <img src={data.pic} alt="" className={ItemModalImg} />

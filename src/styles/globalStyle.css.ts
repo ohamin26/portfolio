@@ -7,6 +7,8 @@ export const globalStyleExample = style({
 // 배경 이미지를 만들어주는 코드
 // 모눈 종이 배경 이미지
 globalStyle('body', {
+  margin: 0,
+  padding: 0,
   fontFamily: 'Pretendard-Regular',
   background: '#fff',
   backgroundImage: `
