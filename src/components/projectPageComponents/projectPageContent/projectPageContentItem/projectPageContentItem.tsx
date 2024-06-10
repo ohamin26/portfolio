@@ -39,15 +39,27 @@ export const ProjectPageContentItem = ({ title }: ProjectPageContentItemProps) =
         {title === 'cj' && <img onClick={openModalHandler} className={ItemImg} src="\assets\cj2.png" alt="" />}
         {title === 'school' && <LuSchool onClick={openModalHandler} size={170} />}
       </div>
-      {title === 'documents' && <span className={ItemTitle}>개인 포트폴리오 프로젝트</span>}
-      {title === 'overdog' && <span className={ItemTitle}>반려동물 일상 공유 플랫폼</span>}
+      {title === 'documents' && (
+        <span onClick={openModalHandler} className={ItemTitle}>
+          개인 포트폴리오 프로젝트
+        </span>
+      )}
+      {title === 'overdog' && (
+        <span onClick={openModalHandler} className={ItemTitle}>
+          반려동물 일상 공유 플랫폼
+        </span>
+      )}
       {title === 'alwrite' && (
-        <span className={ItemTitle}>
+        <span onClick={openModalHandler} className={ItemTitle}>
           다목적 필기 어플리케이션 <br />
           alwirte
         </span>
       )}
-      {title === 'cj' && <span className={ItemTitle}>CJ 대한통운 미래기술 챌린지 2023</span>}
+      {title === 'cj' && (
+        <span onClick={openModalHandler} className={ItemTitle}>
+          CJ 대한통운 미래기술 챌린지 2023
+        </span>
+      )}
       <Modal
         ariaHideApp={false}
         isOpen={openModalState}

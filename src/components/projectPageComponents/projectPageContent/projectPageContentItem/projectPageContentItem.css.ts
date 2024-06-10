@@ -39,6 +39,7 @@ export const ItemImg = style({
   marginTop: '8%',
   overflow: 'hidden',
   borderRadius: '30px 30px 0 0',
+  cursor: 'pointer',
   '@media': {
     '(min-width: 1600px)': {
       marginTop: '11%',
@@ -51,6 +52,7 @@ export const ItemImgOverdog = style({
   height: '60%',
   marginTop: '12%',
   overflow: 'hidden',
+  cursor: 'pointer',
   borderRadius: '30px 30px 0 0',
   '@media': {
     '(min-width: 1600px)': {
@@ -64,6 +66,7 @@ export const ItemImgDocuments = style({
   height: '70%',
   marginTop: '8%',
   overflow: 'hidden',
+  cursor: 'pointer',
   borderRadius: '30px 30px 0 0',
   '@media': {
     '(min-width: 1600px)': {
@@ -75,6 +78,7 @@ export const ItemImgDocuments = style({
 export const ItemTitle = style({
   fontSize: '15px',
   fontWeight: 'bold',
+  cursor: 'pointer',
   marginTop: '5%',
   marginBottom: '5%',
   textAlign: 'center',
