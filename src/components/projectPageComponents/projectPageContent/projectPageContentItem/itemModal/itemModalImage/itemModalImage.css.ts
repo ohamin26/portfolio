@@ -20,7 +20,7 @@ export const ItemModalImg = style({
 
 export const ItemModalImgDocuments = style({
   width: '100%',
-  height: '450px',
+  height: '400px',
   '@media': {
     '(max-width: 700px)': {
       height: '200px',
