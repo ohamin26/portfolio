@@ -79,6 +79,8 @@ export const ItemModalImage = ({ title }: ItemModalImageProps) => {
                 { name: '4', pic: '/assets/alwrite/canvas_draw.webp' },
                 { name: '5', pic: '/assets/alwrite/canvas_ocr.webp' },
                 { name: '6', pic: '/assets/alwrite/canvas_ocr_result.webp' },
+                { name: '7', pic: '/assets/alwrite/canvas_edit.webp' },
+                { name: '8', pic: '/assets/alwrite/canvas_edit_result.webp' },
               ]))
             : '';
   }, [title]);
