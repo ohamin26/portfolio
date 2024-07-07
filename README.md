@@ -10,11 +10,20 @@
 - 💻 노션 웹페이지를 참고하여 웹 페이지 형식으로 제작하였습니다.
 - 👍 웹 페이지에 최적화 되어있습니다. 웹 페이지에서 보는 것을 권장합니다.
 
+<div align="center">
+
+<img src="https://github.com/ohamin26/portfolio/assets/113972482/7074a634-87f3-4cf3-a304-03d77642b87f"> | | <img src="https://github.com/ohamin26/portfolio/assets/113972482/91354c0d-026f-47ec-a44f-74e892b43306">
+--- |  --- | --- |
+
+![skill - 복사본](https://github.com/ohamin26/portfolio/assets/113972482/bc89127f-1b02-4b9e-aa25-7aa518a2057a) |  | ![project_detail](https://github.com/ohamin26/portfolio/assets/113972482/b121819f-c52c-4106-b5ce-76368d1a7ba5)
+--- | --- | --- |
+
+</div>
 <br>
 
 ## 팀원 구성
 
-<div align="center">
+<div>
 
 | **오하민** | 
 | :------: |  
@@ -23,12 +32,6 @@
 </div>
 
 <br>
-
-![banner - 복사본](https://github.com/ohamin26/portfolio/assets/113972482/7074a634-87f3-4cf3-a304-03d77642b87f) | ![about_me](https://github.com/ohamin26/portfolio/assets/113972482/91354c0d-026f-47ec-a44f-74e892b43306)
---- | --- |
-
-![skill - 복사본](https://github.com/ohamin26/portfolio/assets/113972482/bc89127f-1b02-4b9e-aa25-7aa518a2057a) | ![project_detail](https://github.com/ohamin26/portfolio/assets/113972482/b121819f-c52c-4106-b5ce-76368d1a7ba5)
---- | --- |
 
 ## 1. 개발 환경
 
