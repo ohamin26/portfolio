@@ -42,8 +42,6 @@
 
 ## 2. 채택한 개발 기술과 브랜치 전략
 
-### React, vanilla-extract
-
 - **React**
     - 컴포넌트화를 통해 추후 유지 보수와 재사용성이 용이하다 판단하여 선택하였습니다.
 - **Vanilla-extract**
