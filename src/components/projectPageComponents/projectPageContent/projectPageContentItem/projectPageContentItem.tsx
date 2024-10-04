@@ -1,20 +1,11 @@
-import {
-  ItemContainer,
-  ItemContentWrapper,
-  ItemImg,
-  ItemImgDocuments,
-  ItemImgOverdog,
-  ItemImgWashhub,
-  ItemTitle,
-  ModalStyle,
-} from './projectPageContentItem.css';
-import { LuSchool } from 'react-icons/lu';
+import { ItemContainer, ItemContentWrapper, ItemTitle, ModalStyle } from './projectPageContentItem.css';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../../redux/reducers/rootReducer';
 import { closeModal, openModal } from '../../../../redux/slice/modalSlice';
 import Modal from 'react-modal';
 import { ItemModalContent } from './itemModal/itemModalContent/itemModalContent';
+import { itemData } from '../../../../utils/projectData';
 
 interface ProjectPageContentItemProps {
   title: string;
@@ -30,46 +21,16 @@ export const ProjectPageContentItem = ({ title }: ProjectPageContentItemProps) =
   return (
     <div className={ItemContainer}>
       <div className={ItemContentWrapper}>
-        {title === 'washhub' && (
-          <img onClick={openModalHandler} className={ItemImgWashhub} src="\assets\washhub.webp" alt="" />
+        {itemData[title]?.imgSrc && (
+          <img onClick={openModalHandler} className={itemData[title]?.imgClass} src={itemData[title]?.imgSrc} alt="" />
         )}
-        {title === 'documents' && (
-          <img onClick={openModalHandler} className={ItemImgDocuments} src="\assets\documents.png" alt="" />
+        {itemData[title]?.customComponent}
+        {itemData[title]?.titleText && (
+          <span onClick={openModalHandler} className={ItemTitle}>
+            {itemData[title]?.titleText}
+          </span>
         )}
-        {title === 'overdog' && (
-          <img onClick={openModalHandler} className={ItemImgOverdog} src="\assets\overdog.png" alt="" />
-        )}
-        {title === 'alwrite' && <img onClick={openModalHandler} className={ItemImg} src="\assets\alwrite.png" alt="" />}
-        {title === 'cj' && <img onClick={openModalHandler} className={ItemImg} src="\assets\cj2.png" alt="" />}
-        {title === 'school' && <LuSchool onClick={openModalHandler} size={170} />}
       </div>
-      {title === 'washhub' && (
-        <span onClick={openModalHandler} className={ItemTitle}>
-          코인세탁소 길라잡이 플랫폼 <br />
-          워시허브
-        </span>
-      )}
-      {title === 'documents' && (
-        <span onClick={openModalHandler} className={ItemTitle}>
-          개인 포트폴리오 프로젝트
-        </span>
-      )}
-      {title === 'overdog' && (
-        <span onClick={openModalHandler} className={ItemTitle}>
-          반려동물 일상 공유 플랫폼
-        </span>
-      )}
-      {title === 'alwrite' && (
-        <span onClick={openModalHandler} className={ItemTitle}>
-          다목적 필기 어플리케이션 <br />
-          alwirte
-        </span>
-      )}
-      {title === 'cj' && (
-        <span onClick={openModalHandler} className={ItemTitle}>
-          CJ 대한통운 미래기술 챌린지 2023
-        </span>
-      )}
       <Modal
         ariaHideApp={false}
         isOpen={openModalState}
