@@ -47,8 +47,23 @@ export const ItemImg = style({
   },
 });
 
-export const ItemImgOverdog = style({
+export const ItemImgWashhub = style({
   width: '60%',
+  height: '85%',
+  marginTop: '8%',
+  overflow: 'hidden',
+  borderRadius: '30px 30px 0 0',
+  cursor: 'pointer',
+  '@media': {
+    '(min-width: 468px)': {
+      width: '50%',
+      height: '80%',
+    },
+  },
+});
+
+export const ItemImgOverdog = style({
+  width: '40%',
   height: '60%',
   marginTop: '12%',
   overflow: 'hidden',

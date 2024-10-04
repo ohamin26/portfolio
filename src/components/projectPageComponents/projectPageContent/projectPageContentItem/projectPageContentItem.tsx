@@ -4,6 +4,7 @@ import {
   ItemImg,
   ItemImgDocuments,
   ItemImgOverdog,
+  ItemImgWashhub,
   ItemTitle,
   ModalStyle,
 } from './projectPageContentItem.css';
@@ -29,6 +30,9 @@ export const ProjectPageContentItem = ({ title }: ProjectPageContentItemProps) =
   return (
     <div className={ItemContainer}>
       <div className={ItemContentWrapper}>
+        {title === 'washhub' && (
+          <img onClick={openModalHandler} className={ItemImgWashhub} src="\assets\washhub.webp" alt="" />
+        )}
         {title === 'documents' && (
           <img onClick={openModalHandler} className={ItemImgDocuments} src="\assets\documents.png" alt="" />
         )}
@@ -39,6 +43,12 @@ export const ProjectPageContentItem = ({ title }: ProjectPageContentItemProps) =
         {title === 'cj' && <img onClick={openModalHandler} className={ItemImg} src="\assets\cj2.png" alt="" />}
         {title === 'school' && <LuSchool onClick={openModalHandler} size={170} />}
       </div>
+      {title === 'washhub' && (
+        <span onClick={openModalHandler} className={ItemTitle}>
+          코인세탁소 길라잡이 플랫폼 <br />
+          워시허브
+        </span>
+      )}
       {title === 'documents' && (
         <span onClick={openModalHandler} className={ItemTitle}>
           개인 포트폴리오 프로젝트
