@@ -22,19 +22,19 @@ export const IntroContentEduItem = ({ text }: ItemProps) => {
               https://hansei.sen.hs.kr/
             </a>
           </div>
-          <span className={introContentEduItemDate}>2014.03.01 ~ 2017.02.22</span>
+          <span className={introContentEduItemDate}>2014.03.01 ~ 2018.02.22</span>
         </div>
       )}
       {text === 'college' && (
         <div className={introContentEduItem}>
           <img className={introContentEduItemImg} src="/assets/college.svg" alt="" />
           <div className={introContentEduItemTitle}>
-            <span>한국공학대학교 소프트웨어학부 4학년 재학중</span>
+            <span>한국공학대학교 소프트웨어학부 4학년 재학중(졸업 예정)</span>
             <a href="https://www.tukorea.ac.kr/tukorea/index.do" target="_blank" className={introContentEduItemLink}>
               https://www.tukorea.ac.kr/tukorea/index.do
             </a>
           </div>
-          <span className={introContentEduItemDate}>2019.03.01 ~ </span>
+          <span className={introContentEduItemDate}>2019.03.01 ~ 2025.02</span>
         </div>
       )}
       {text === 'gdsc' && (
@@ -50,7 +50,7 @@ export const IntroContentEduItem = ({ text }: ItemProps) => {
               https://gdsc.community.dev/tech-university-of-korea/
             </a>
           </div>
-          <span className={introContentEduItemDate}>2023.10.16 ~</span>
+          <span className={introContentEduItemDate}>2023.10.16 ~ 2024.07.31</span>
         </div>
       )}
       {text === 'cj' && (

@@ -25,12 +25,12 @@ export const ProjectPageContentItem = ({ title }: ProjectPageContentItemProps) =
           <img onClick={openModalHandler} className={itemData[title]?.imgClass} src={itemData[title]?.imgSrc} alt="" />
         )}
         {itemData[title]?.customComponent}
-        {itemData[title]?.titleText && (
-          <span onClick={openModalHandler} className={ItemTitle}>
-            {itemData[title]?.titleText}
-          </span>
-        )}
       </div>
+      {itemData[title]?.titleText && (
+        <span onClick={openModalHandler} className={ItemTitle}>
+          {itemData[title]?.titleText}
+        </span>
+      )}
       <Modal
         ariaHideApp={false}
         isOpen={openModalState}

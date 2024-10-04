@@ -14,14 +14,14 @@ export const introContentInfoImg = style({
   marginTop: '20px',
   width: '150px',
   height: '150px',
-  borderRadius: '40%',
+  borderRadius: '30px',
   boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.1)',
 });
 
 export const introContentContact = style({
   display: 'flex',
   flexDirection: 'column',
-  marginTop: '35px',
+  marginTop: '25px',
   marginLeft: '5px',
   '@media': {
     'screen and (max-width: 1000px)': {
@@ -34,7 +34,7 @@ export const introContentContactContainer = style({
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'start',
-  marginBottom: '5px',
+  marginBottom: '12px',
 });
 
 export const introContentContainer = style({
